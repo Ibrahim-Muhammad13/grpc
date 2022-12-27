@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sum;
+
+option go_package ="./sumpb";
+
+message sumRequest{
+    int64 FirstNumber=1;
+    int64 SecondNumber=2;
+}
+message sumResponse{
+    int64 Result=1;
+}
+
+service sumNumbers{
+    rpc Sum(sumRequest) returns (sumResponse){};
+}
