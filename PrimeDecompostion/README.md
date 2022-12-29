@@ -1,0 +1,1 @@
+simple grpc app to implement a PrimeNumberDecomposition RPC Server Streaming API in a CalculatorService
